@@ -16,8 +16,8 @@ class CreateDureeTarificationsTable extends Migration
         Schema::create('duree_tarifications', function (Blueprint $table) {
             $table->id();
             $table->double('price');
-            $table->foreignId("duree_location_id");
-            $table->foreignId("article_id");
+            $table->foreignId("duree_location_id")->constrained();
+            $table->foreignId("article_id")->constrained();
             $table->timestamps();
         });
         Schema::enableForeignKeyConstraints();

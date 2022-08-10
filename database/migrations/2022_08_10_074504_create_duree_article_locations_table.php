@@ -14,8 +14,8 @@ class CreateDureeArticleLocationsTable extends Migration
     public function up()
     {
         Schema::create('duree_article_locations', function (Blueprint $table) {
-            $table->foreignId("article_id");
-            $table->foreignId("location_id");
+            $table->foreignId("article_id")->constrained();
+            $table->foreignId("location_id")->constrained();
         });
         Schema::enableForeignKeyConstraints();
     }
