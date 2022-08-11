@@ -13,7 +13,7 @@ class CreateDureeArticleLocationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('duree_article_locations', function (Blueprint $table) {
+        Schema::create('article_locations', function (Blueprint $table) {
             $table->foreignId("article_id")->constrained();
             $table->foreignId("location_id")->constrained();
         });
@@ -31,6 +31,6 @@ class CreateDureeArticleLocationsTable extends Migration
             $table->dropForeign(["article_id", "location_id"]);
         });
 
-        Schema::dropIfExists('duree_article_locations');
+        Schema::dropIfExists('article_locations');
     }
 }
