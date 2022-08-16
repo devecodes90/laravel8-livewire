@@ -2,7 +2,5 @@
 @import "~admin-lte/dist/css/adminlte.css";
 
 .ellipsis{
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    text
 }
