@@ -1,0 +1,23 @@
+
+
+@extends("layouts.master")
+
+@section('content')
+    <div class="row">
+       <div class="col-12 p-4">
+          <div class="jumbotron">
+            <h class="display-3">Bienvenue, {{ userFullName() }}</h>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Rerum voluptas facere ?</p>
+                  <hr class="my-4">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Exercitationem nesciunt tempora est quo sed expedita fugiat,
+                    autem obcaecati iure vitae molestias, illum earum ex eveniet
+                    porro laborum aliquid quas! Nisi?</p>
+                    <p class="lead">
+                        <a href="" class="btn btn-primary btn-lg" role="button">Learn More</a>
+                    </p>
+          </div>
+       </div>
+    </div>
+@endsection
